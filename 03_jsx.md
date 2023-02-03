@@ -31,7 +31,7 @@ But we are just adding extra elements to the DOM. It will slow down the page and
 
 React has something to solve this called a Fragment. So we can change the `div` to be a `React.Fragment` element and we can change the closing tag as well. We can save it and it will seem nothing has changed. But now we no longer have that extra `div`. Basically `React.Fragment` will just be removed whenever the element is appended to the DOM.
 
-```jsx
+```js
 import './App.css';
 import React from 'react';
 
@@ -60,7 +60,7 @@ export default function App() {
     <>
       <h1>Hello World</h1>
       <p>Test</p>
-    <>
+    </>
   );
 }
 ```
@@ -78,7 +78,7 @@ export default function App() {
     <>
       <h1>Hello {name.toUpperCase()}</h1>
       <p>Test</p>
-    <>
+    </>
   );
 }
 ```
@@ -118,7 +118,7 @@ export default function App() {
     <>
       {error ? <h1>Error</h1> : null};
       {!error ? <h1>Success</h1> : null};
-    <>
+    </>
   );
 }
 ```
@@ -135,7 +135,7 @@ export default function App() {
     <>
       {error && <h1>Error</h1>};
       {!error || <h1>Success</h1>};
-    <>
+    </>
   );
 }
 ```
@@ -175,7 +175,7 @@ export default function App() {
         text-align: 'center',
         font-size: 48px
       }}>Hello World</p>
-    <>
+    </>
   );
 }
 ```

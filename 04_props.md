@@ -1,4 +1,4 @@
-```jsx
+```js
 export default function App() {
   return (
     <>
@@ -11,7 +11,7 @@ export default function App() {
 
 What is the motivation behind Props? We have a h1 tag with Hello Connor and a h1 tag with Hello Clement. Clearly there is some redundancy here. We can pass in a parameter as what is known as props. Props is an object.
 
-```jsx
+```js
 export default function App() {
   return (
     <>
@@ -30,7 +30,7 @@ You can still we get the same output if we run this.
 
 What some people find annoying is because we pass a single props variable, no way to look at this function and see what props the function expects. We could use Typescript or we could use a comment, but one of the built-in ways is that instead of naming the parameter props, we destructure it.
 
-```jsx
+```js
 export default function App() {
   return (
     <>
@@ -47,7 +47,7 @@ function Hello({name = "User"}) {
 
 So now name is going to be User. There is also a defaultProps property doing the same thing as well.
 
-```jsx
+```js
 export default function App() {
   return (
     <>

@@ -16,7 +16,7 @@
 - Javascript syntax extension for inlining HTML or any XML elements in Javascript code
 - When used with React, JSX will compile into some React code
 
-```jsx
+```js
 const element = (
   <p id="Hello">
     Hello <em>World!</em>
@@ -48,7 +48,7 @@ The first element is going to be the type which is `p` here. Then we have an opt
 
 - Functions that return a React element (JSX)
 
-```jsx
+```js
 function SayHello() {
   return <p>Hello World</o>
 }
