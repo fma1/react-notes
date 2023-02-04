@@ -1,4 +1,4 @@
-## Component LifeCycle
+## Component Lifecycle
 
 So this is the main `App` component. We can see it has this state with the intial state being true. Then we return a fragment with a button that calls `setIsShown()` when clicked and shows the Counter based on the `isShown` state.
 
